@@ -6,7 +6,9 @@ addons:
   apt:
     packages:
       - graphviz
-
+arch:
+    - amd64
+    - arm64
 python:
     - 3.6
 
@@ -70,6 +72,12 @@ matrix:
       python: "3.7"
       dist: xenial
     - arch: amd64
+      python: "3.8"
+      dist: xenial
+    - arch: arm64
+      python: "3.7"
+      dist: xenial
+    - arch: arm64
       python: "3.8"
       dist: xenial
     - arch: amd64
